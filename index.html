@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -19,13 +20,24 @@
         <nav class = "pinned cyan darken-3 navbar-fixed">
             <div class = "container">
                 <div class="nav-wrapper">
-                    <a class="brand-logo hide-on-small-only" href="index.html">BLANCHARD Dorian</a>
-                    <ul class="right hide-on-med-and-down waves-effect waves-input-wrapper">
-                        <li class="active"><a href="index.html"><i class="material-icons">&#xE88A;</i></a></li>
-                        <li><a href="WoodenPong.html">Wooden Pong</a></li>
-                        <li><a>LotoHelper</a></li>
-                        <li><a>LoLBuilder</a></li>
-                        <li><a>Exemple</a></li>
+                    <a class="brand-logo left" href="index.html">BLANCHARD Dorian</a>
+                    <ul class="right waves-effect waves-input-wrapper">
+                         <li>
+                            <a href="#" data-activates="slide-out" class="sideNavButton">
+                                <i class="material-icons">menu</i>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="index.html">
+                                <i class="material-icons">&#xE88A;</i>
+                            </a>
+                        </li>
+                       
+                        <li class="active">
+                            <a href="index.html">
+                                <i class="material-icons">info</i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -36,6 +48,7 @@
 			<div class = "row"></div>
 			<div class = "row"></div>
 			<div class = "row"></div>
+            
             
 			<div class = "row push-l2">
                     <div class ="col s7 push-s1 z-depth-3 cyan lighten-2">
@@ -58,24 +71,39 @@
                     </div>
 		      </div>
              <div class = "row">
-             <div class ="col s7 push-s1 z-depth-3 cyan lighten-2">
-                <div>
-                    <p class="">Welcome here !</p>
-                    <p class="">This website will host my different creations / projects.</p>
-                    <p class="">There is currently 5 on my github : <a class="red-text" href="https://github.com/Arilox">github.com/Arilox</a></p>
-                    <p class="">Feel free to check my different creations in the differents pages. (Work in progress)</p>
-                    <p class="">This site is not finished at all</p>
-                    <p class="">You still can contact me for more information.</p>
+                <div class ="col s7 push-s1 z-depth-3 cyan lighten-2">
+                    <div>
+                        <p class="">Welcome here !</p>
+                        <p class="">This website will host my different creations / projects.</p>
+                        <p class="">There is currently 5 on my github : <a class="red-text" href="https://github.com/Arilox">github.com/Arilox</a></p>
+                        <p class="">Feel free to check my different creations in the differents pages. (Work in progress)</p>
+                        <p class="">This site is not finished at all</p>
+                        <p class="">You still can contact me for more information.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
         
-       
+           <ul id="slide-out" class="side-nav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="images/office.jpg">
+          </div>
+          <a href="#!user"><img class="circle" src="images/Calvin3.png"></a>
+          <a href="#!name"><span class="white-text name">John Doe</span></a>
+          <a href="#!email"><span class="white-text email">jgkj@gmal.lol</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      </ul>
         
 	</div>
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/sidebar.js"></script>
 </body>
 </html>
