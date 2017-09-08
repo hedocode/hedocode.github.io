@@ -1,2 +1,2 @@
 #Website using Materialize.css
-This is just a website to explain my different projects.
+Personnal website where I explain my different projects.
