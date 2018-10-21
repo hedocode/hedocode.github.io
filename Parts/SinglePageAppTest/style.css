@@ -1,0 +1,10 @@
+*{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+
+.center{
+    margin-left: 50%;
+    margin-top: 50%;
+}

@@ -1,0 +1,53 @@
+@font-face{
+    font-family: "Notable";
+    src: url("FONTS/Notable/Notable-Regular.ttf") format("truetype");
+}
+
+
+
+@keyframes starwars {
+    from {
+        color: black;
+    }
+  
+    to {
+        color: white;
+    }
+}
+
+
+*{
+    margin: 0;
+}
+
+#bkgaurora{
+    background-image: url("IMGS/auroraunsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+    perspective: 250px;
+    perspective-origin: 50% 0%;
+    transform-style: preserve-3d;
+}
+
+.tt{
+    mix-blend-mode: multiply;
+    background-color: black;
+    color: white;
+    font-family: "Arial";
+    font-size: 10vh;
+    padding: 5vh 5vw; 
+    text-align: center;
+    height: 90vh;
+}
+
+.starwars{
+    perspective: 150px;
+    animation: starwars;
+    animation-duration: 1s;   
+}
+
+#tt2{
+    background-color: orange;
+    color: transparent;
+    position: absolute;
+}
