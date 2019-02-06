@@ -13,14 +13,23 @@ clr = color
 	overflow:hidden;
 }
 
+.hidden{
+	display: none;
+}
+
 .TransparentP{
 	padding: 5% 0;
 	color: white;
-  	background-image: linear-gradient(black, rgb(25,15,50));
+  	background-image: linear-gradient(to right, black, rgb(25,15,50));
   	mix-blend-mode: multiply;
 	text-align: center; 
 	vertical-align: middle;
 	font-family: ttf;
+}
+
+.footer{
+	background-image: linear-gradient(to right, black, rgb(25,15,50));
+	mix-blend-mode: multiply;
 	width: 100%;
 	height: 100%;
 }
