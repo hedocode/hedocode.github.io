@@ -5,6 +5,7 @@ body{
 a{
     color: white;
 }
+
 a:visited{
     color: gray;
 }
@@ -13,9 +14,11 @@ a:visited{
     font-size: 8vmin;
     font-family: Arial;
 }
+
 ul{
     margin-left: 5vw;
 }
+
 li{
     margin-bottom: 2vh;
 }

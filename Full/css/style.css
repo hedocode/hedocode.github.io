@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../../FONTS/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url("../../FONTS/Lato/Lato-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato Black Italic";
+    src: url("../../FONTS/Lato/Lato-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../../FONTS/Lato/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato Hairline";
+    src: url("../../FONTS/Lato/Lato-Hairline.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato Hairline Italic";
+    src: url("../../FONTS/Lato/Lato-HairlineItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato Italic";
+    src: url("../../FONTS/Lato/Lato-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url("../../FONTS/Lato/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato Light Italic";
+    src: url("../../FONTS/Lato/Lato-LightItalic.ttf") format("truetype");
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    font-family: "Lato Light";
+    font-size: 2em;
+    flex-wrap: wrap;
+}
+
+.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fullscreen{
+    width: 100vw;
+    height: 100vh;
+}
+
+.fullsize{
+    width: 100%;
+    height: 100%;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.bubble{
+    padding: 10px;
+}
+
+.row{
+    flex-direction: row !important;
+}
+
+@media screen and (max-width: 640px){
+    *{
+        flex-direction: column;
+    }
+}
+
+.title{
+    font-size: 4em;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
