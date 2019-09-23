@@ -1,0 +1,28 @@
+doctype html
+html
+    include ../../includes/head.pug
+    +head(Titre)
+    body
+        div(class="col fullscreen fBetween")
+            div(class="row fCenter bubble")
+                a(href="../index.html")
+                    i(class="fas fa-home")
+                        Kurf
+            
+            div(class="fCenter")
+                form(class="row rounded" action="")
+                    div(class="select col")
+                        div(class="active") 
+                            img(class="icon50" src="../IMGS/Icons/google.png")
+                        div
+                            img(class="icon50" src="../IMGS/Icons/duckduckgo.png")
+
+                        div
+                            img(class="icon50" src="../IMGS/Icons/ecosia.png")
+                    
+                    div
+                        input(type="text" autofocus)
+                        button(class="")
+                            i(class="fas fa-search")
+
+        include ../../includes/footer.pug
