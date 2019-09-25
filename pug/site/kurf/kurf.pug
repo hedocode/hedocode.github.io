@@ -1,7 +1,7 @@
 doctype html
 html
     include ../../includes/head.pug
-    +head(Titre)
+    +head(Kurf, "../")
     body
         div(class="col fullscreen fBetween")
             div(class="row fCenter bubble")
@@ -25,4 +25,6 @@ html
                         button(class="")
                             i(class="fas fa-search")
 
-        include ../../includes/footer.pug
+            include ../../includes/footer.pug
+        include ../../includes/bodyscripts.pug
+        +bodyscripts("../")

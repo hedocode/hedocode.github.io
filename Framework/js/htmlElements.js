@@ -7,7 +7,7 @@ var tips = document.getElementsByClassName('tips');
 
 function toggleChildren(el){
     el.style.position = "relative";
-    for (let i = 0; i < el.children.length; i++) {
+    for (var i = 0; i < el.children.length; i++) {
         var child = el.children[i];
         child.style.display = (child.style.display == 'none' ? 'flex' : 'none');
     }
@@ -19,15 +19,17 @@ function toggleActive(el){
     el.classList.toggle('active');
 }
 
-for (let i = 0; i < selects.length; i++) {
-    const select = selects[i];
 
-    for (let i = 0; i < select.children.length; i++) {
-        const child = select.children[i];
-
-        child.onclick = function(){toggleActive(child)};
+for (var i = 0; i < selects.length; i++) {
+    var select = selects[i];
+    
+    for (var i = 0; i < select.children.length; i++) {
+        var child = select.children[i];
+        console.log(child);
+        child.onclick = toggleActive(child);
+        console.log(child);
     }
-    select.onclick = function(){toggleChildren(select)};
+    select.onclick = toggleChildren(select);
     toggleChildren(select);
 }
 

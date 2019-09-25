@@ -1,1 +1,1 @@
-pug pug/site -p pug/includes/ -o site -w
+pug pug/site -p pug/includes/ -o . -w
