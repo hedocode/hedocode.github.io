@@ -3,19 +3,19 @@ html
     include ../includes/head.pug
     +head(Index, "")
     body
-        div(class="col fullscreen fBetween")
-            div(class="fCenter bubble")
+        div(class="column fullscreen spaceBetween")
+            div(class="center bubble")
                 i(class="fas fa-home")
             
-            div(class="fCenter col")
+            div(class="center column")
                 div(class="bubble")
                     a(href="Kurf/kurf.html") Kurf
                 div(class="bubble")
                     a(href="Portfolio/portfolio.html") Portfolio
                 div(class="bubble")
-                    a Tests
-                div(class="bubble") Mon Profil
-                div(class="bubble") Blog
+                    a(class="grey_txt") Tests
+                div(class="bubble grey_txt") Mon Profil
+                div(class="bubble grey_txt") Blog
 
             include ../includes/footer.pug
         include ../includes/bodyscripts.pug
