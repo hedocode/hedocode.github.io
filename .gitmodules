@@ -1,0 +1,3 @@
+[submodule "KUSIX"]
+	path = KUSIX
+	url = https://github.com/Kamoleons/KUSIX.git
