@@ -1,6 +1,10 @@
 # Install
 
 
+## Gather KUSIX submodule
+
+`git submodule update --init`
+
 
 ##### If you are on windows Install a linux subsystem
 

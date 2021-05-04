@@ -1,6 +1,10 @@
 # Installer
 
 
+## Récupérer le sous module KUSIX
+
+`git submodule update --init`
+
 
 ##### Si vous êtes sous windows installez un sous système d'exploitation linux
 
