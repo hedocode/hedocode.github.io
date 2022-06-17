@@ -14,7 +14,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: "public"
+    outDir: "docs"
   },
   publicDir: "static",
   base: '/',
