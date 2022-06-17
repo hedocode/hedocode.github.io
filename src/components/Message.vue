@@ -98,9 +98,11 @@ onMounted(
       }
 
       &:hover {
-        opacity: 1;
-        .message {
-          opacity: 0.95;
+        @media (pointer: fine) {
+          opacity: 1;
+          .message {
+            opacity: 0.95;
+          }
         }
       }
     }
