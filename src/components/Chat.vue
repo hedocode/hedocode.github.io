@@ -49,7 +49,7 @@ const contactQA =  new QA(
       <a href="mailto:blanchardorian@gmail.com">${t("by")} e-mail</a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/dorian-blanchard-81528114b/">${t("on")} Linked In</a>
+      <a href="https://www.linkedin.com/in/dorian-blanchard-81528114b/" target="_blank">${t("on")} Linked In</a>
     </li>
   </ul>`,
 );
