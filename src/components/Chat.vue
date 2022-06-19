@@ -107,7 +107,7 @@ const QandAs = ref([
       [
         new QA(
           () => t("which.language_used"),
-          () => `<a href='https://vuejs.org' target='_blank'>VueJS3</a> ${t("with")} <a href='https://www.typescriptlang.org/' target='__blank'>Typescript</a> ${"and"} <a href='https://sass-lang.com/'>SASS</a>, ${t("language_managed")} ${t("with")} <a href='https://kazupon.github.io/vue-i18n' target='_blank'>vue-i18n</a>`
+          () => `<a href='https://vuejs.org' target='_blank'>VueJS3</a> ${t("with")} <a href='https://www.typescriptlang.org/' target='__blank'>Typescript</a> ${t("and")} <a href='https://sass-lang.com/'>SASS</a>, ${t("language_managed")} ${t("with")} <a href='https://kazupon.github.io/vue-i18n' target='_blank'>vue-i18n</a>`
         ),
         new QA(
           () => t("which.websites_you_worked_on"),
