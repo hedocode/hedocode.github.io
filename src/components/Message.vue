@@ -22,13 +22,13 @@ function fadeOnScreenIntersect(
     (entry: any) => {
       // chaque élément de entries correspond à une variation
       // d'intersection pour un des éléments cible:
-      console.log("");
+      // console.log("");
       // console.log("entry.boundingClientRect : %o", entry.boundingClientRect);
       // console.log("entry.intersectionRatio : %o", entry.intersectionRatio);
       // console.log("entry.intersectionRect : %o", entry.intersectionRect);
       // console.log("entry.isIntersecting : %o", entry.isIntersecting);
       // console.log("entry.rootBounds : %o", entry.rootBounds);
-      console.log("entry.target : %o", entry.target);
+      // console.log("entry.target : %o", entry.target);
       // console.log("entry.time : %o", entry.time);
       if (entry.intersectionRatio > prevRatio) {
         entry.target.classList.remove(outsideScreenCls);

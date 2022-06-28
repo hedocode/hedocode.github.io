@@ -17,7 +17,6 @@ const colorKeys = Object.keys(colors);
 const colorValues = Object.values(colors);
 
 function changeColor(c: string) {
-  console.log("color : %o", c);
   if(c === "blue") {
     color.setBlue()
   } else if(c === "red") {
