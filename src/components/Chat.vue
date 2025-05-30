@@ -49,7 +49,7 @@ const contactQA =  new QA(
       <a href="mailto:blanchardorian@gmail.com">${t("by")} e-mail</a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/dorian-blanchard-81528114b/" target="_blank">${t("on")} Linked In</a>
+      <a href="https://www.linkedin.com/in/dorian-blanchard-hedocode/" target="_blank">${t("on")} Linked In</a>
     </li>
   </ul>`,
 );
@@ -82,27 +82,6 @@ const project = new QA(
 );
 
 const QandAs = ref([
-  new QA(
-    () => t("what_is_your.name"),
-    "Dorian Blanchard",
-    [
-      new QA(
-        () => t("what_is_your.studies"),
-        () => t("what_is_your.studies_answer"),
-        project
-      ),
-      new QA(
-        () => t("why.edocode"),
-        () => `<div>${t("why.edocode_answer_part1")}
-                <br/><br/>
-                ${t("why.edocode_answer_part2")} <a href="https://github.com/hedocode" target="_blank">${t("why.edocode_answer_part3")}</a> ${t("why.edocode_answer_part4")}
-                <br/><br/>
-                ${t("why.edocode_answer_part5")} <a href='https://github.com/hedocode/MyMonoGames/releases/download/v0.0.0/win-x64.zip'>${t("why.edocode_answer_part6")}</a>
-            </div>`,
-        contactQA
-      ),
-    ]
-  ),
   new QA(
     () => t("what_is_your.work"),
     () => t("what_is_your.work_answer") + " 🌐",
@@ -147,6 +126,27 @@ const QandAs = ref([
         ),
       ]
     ),
+  ),
+  new QA(
+    () => t("what_is_your.name"),
+    "Dorian Blanchard",
+    [
+      new QA(
+        () => t("what_is_your.studies"),
+        () => t("what_is_your.studies_answer"),
+        project
+      ),
+      new QA(
+        () => t("why.edocode"),
+        () => `<div>${t("why.edocode_answer_part1")}
+                <br/><br/>
+                ${t("why.edocode_answer_part2")} <a href="https://github.com/hedocode" target="_blank">${t("why.edocode_answer_part3")}</a> ${t("why.edocode_answer_part4")}
+                <br/><br/>
+                ${t("why.edocode_answer_part5")} <a href='https://github.com/hedocode/MyMonoGames/releases/download/v0.0.0/win-x64.zip'>${t("why.edocode_answer_part6")}</a>
+            </div>`,
+        contactQA
+      ),
+    ]
   ),
 ]);
 
