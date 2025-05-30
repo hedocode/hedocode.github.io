@@ -62,7 +62,7 @@ const project = new QA(
     () => t("how_can_we.support_you_answer") + `
       <ul>
         <li>
-            <a href="https://twitter.com/hedocode" target="_blank">Twitter</a>
+            <a href="https://twitter.com/edocode" target="_blank">Twitter</a>
         </li>
         <li>
             <a href="https://instagram.com/hedocode" target="_blank">Instagram</a>
@@ -93,7 +93,12 @@ const QandAs = ref([
       ),
       new QA(
         () => t("why.edocode"),
-        () => t("why.edocode_answer"),
+        () => `<div>${t("why.edocode_answer_part1")}
+                <br/><br/>
+                ${t("why.edocode_answer_part2")} <a href="https://github.com/hedocode" target="_blank">${t("why.edocode_answer_part3")}</a> ${t("why.edocode_answer_part4")}
+                <br/><br/>
+                ${t("why.edocode_answer_part5")} <a href='https://github.com/hedocode/MyMonoGames/releases/download/v0.0.0/win-x64.zip'>${t("why.edocode_answer_part6")}</a>
+            </div>`,
         contactQA
       ),
     ]
@@ -119,17 +124,15 @@ const QandAs = ref([
                   <a href='https://www.volvic-vvx.com/' target="_blank">Volvic VVX</a>
                 </li>
                 <li>
-                  <a href="https://associations.clermont-ferrand.fr/" target="_blank">Clermont Associations</a>
-                </li>
-                <li>
-                  <a href="https://www.siman-france.com/" target="_blank">Siman France</a>
-                </li>
-                <li>
                   <a href="https://www.chocolats-bellanger.com/" target="_blank">Chocolats Bellanger</a>
                 </li>
                 <li>
-                  <a href="https://demestre-photographie.fr" target="_blank">Demestre Photographie</a>
+                  <a href="https://www.columbuscafe.com/la-carte/" target="_blank">Columbus café</a>
                 </li>
+                <li>
+                  <a href="https://myurban.fr/" target="_blank">My Urban (Soccer)</a>
+                </li>
+                
               </ul>
             </div>`
           ),
@@ -187,15 +190,8 @@ function ask(QandA: QA) {
       }
       canSendMessage.value = true;
     }
-  
     const sendAnimation = () => {
-      // const QACopy = {...QandA};
-      // QACopy.status = "disappear";
-  
-      // QandAs.value.splice(QAIndex, 0, QandA);
-      // QandA.status = "sending";
-  
-      // Adding the message to the chat
+      // Adding the user message to the chat
       chatMessages.push(
         new MessageObject(
           QandA.question,
@@ -205,14 +201,29 @@ function ask(QandA: QA) {
       
       // Removing the clicked QA
       QandAs.value.splice(QAIndex, 1);
+
+      // Add typing indicator with animation
+      const typingMessage = new MessageObject(
+        "",
+        "typing"
+      );
+      chatMessages.push(typingMessage);
+
+      // Remove typing indicator after a short delay and show the actual response
+      setTimeout(() => {
+        // Remove typing indicator
+        const typingIndex = chatMessages.findIndex(msg => msg.cls === "typing");
+        if (typingIndex !== -1) {
+          chatMessages.splice(typingIndex, 1);
+        }
+        
+        // Add the actual response
+        appearInChatAndNewQuestions();
+      }, 1500);
     }
     
-  
     sendAnimation();
     canSendMessage.value = false;
-    setTimeout(
-      appearInChatAndNewQuestions, 2000
-    );
   }
 }
 </script>

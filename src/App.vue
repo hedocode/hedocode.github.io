@@ -13,7 +13,7 @@ const { t } = useI18n() // use as global scope
 <template>
   <Header
     title="edocode"
-    :subtitle="t('slogan')"
+    :subtitle="t('slogan_part1') + '<br/>' + t('slogan_part2')"
   />
 
   <Chat></Chat>

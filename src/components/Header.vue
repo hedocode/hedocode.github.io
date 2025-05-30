@@ -103,6 +103,7 @@ $gutter: 5px;
 
   select {
     cursor: pointer;
+    border: 1px solid 
   }
 }
 

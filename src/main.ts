@@ -10,7 +10,7 @@ import { createI18n } from "vue-i18n";
 const messages = {
     en: {
         contact: 'How can we contact you ?',
-        welcome_message: "Hello ! If you have any question, do not hesitate ! :)",
+        welcome_message: "Hello ! If you have any question, do not hesitate ! :)",
         en: "English",
         fr: "French",
         what_is_your: {
@@ -42,23 +42,24 @@ const messages = {
         and: "and",
         why: {
             edocode: 'Why "edocode" then ?',
-            edocode_answer: `<div>That's a nickname meaning "he do code" that I use for my dev activities 👨‍💻
-                <br/><br/>
-                As in <a href="https://github.com/hedocode" target="_blank">my Github</a> where I store my software developer projects which also often are palindromes !
-                <br/><br/>
-                By the way, you can find my little games / simulations compilations there (for Windows) : <a href='https://github.com/hedocode/MyMonoGames/releases/download/v0.0.0/win-x64.zip'>Download from GitHub</a>
-            </div>`,
+            edocode_answer_part1: `That's a nickname meaning "he do code" that I use for my dev activities 👨‍💻`,
+            edocode_answer_part2: `As in`,
+            edocode_answer_part3: `my Github`,
+            edocode_answer_part4: `where I store my software developer projects which also often are palindromes !`,
+            edocode_answer_part5: `By the way, you can find my little games / simulations compilations there (for Windows) :`,
+            edocode_answer_part6: `Download from GitHub`,
         },
         ofc_list: "Of course ! Here is a little list : ",
         language_managed: "the different languages are managed",
         my: {
-            project: "I plan to do a website to make websites (IDE/CMS), named EditIDE"
+            project: "I plan to do a website to make websites named EditIDE."
         },
-        slogan: "<div>Developer by training,<br/>Designer of passion(s)</div>",
+        slogan_part1: "Developer by training,",
+        slogan_part2: "Designer of passion(s)",
     },
     fr: {
         contact: 'Comment peut on te contacter',
-        welcome_message: "Salut ! Si vous avez la moindre question, n'hésitez pas ! :)",
+        welcome_message: "Salut ! Si vous avez la moindre question, n'hésitez pas ! :)",
         fr: "Francais",
         en: "Anglais",
         what_is_your: {
@@ -90,19 +91,20 @@ const messages = {
         and: "et",
         why: {
             edocode: 'Pourquoi "edocode" alors ?',
-            edocode_answer: `<div>C'est un pseudonyme signifiant "il fait du code" que j'utilise pour mes activités autour du développement 👨‍💻
-                <br/><br/>
-                Comme <a href="https://github.com/hedocode" target="_blank">sur mon Github</a> où je stocke mes projets info qui sont souvent des palindromes !
-                <br/><br/>
-                Vous pouvez d'ailleurs y retrouver, ma compilation de petits jeux / simulation (pour Windows) : <a href='https://github.com/hedocode/MyMonoGames/releases/download/v0.0.0/win-x64.zip'>Télécharger depuis Github</a>
-            </div>`,
+            edocode_answer_part1: `C'est un pseudonyme signifiant "il fait du code" que j'utilise pour mes activités autour du développement 👨‍💻`,
+            edocode_answer_part2: `Comme`,
+            edocode_answer_part3: `sur mon Github`,
+            edocode_answer_part4: `où je stocke mes projets info qui sont souvent des palindromes !`,
+            edocode_answer_part5: `Vous pouvez d'ailleurs y retrouver, ma compilation de petits jeux / simulation (pour Windows) :`,
+            edocode_answer_part6: `Télécharger depuis Github`,
         },
         ofc_list: "Bien sûr ! Voici une petite liste : ",
         language_managed: "les différantes langues sont gérées",
         my: {
-            project: "J'ai pour projet de concevoir un site web pour faire des sites webs (IDE/CMS), nommé EditIDE"
+            project: "J'ai pour projet de concevoir un site web pour faire des sites webs nommé EditIDE."
         },
-        slogan: "<div>Développeur de formation,<br/>Designer de passion(s)</div>",
+        slogan_part1: "Développeur de formation,",
+        slogan_part2: "Designer de passion(s)",
     }
 }
   

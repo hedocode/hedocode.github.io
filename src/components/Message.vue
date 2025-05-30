@@ -74,8 +74,14 @@ onMounted(
     <article
       class="message"
       :style="[(cls.includes('userMsg') || cls.includes('QandA')) ? 'background-color: ' + color.color + ';' : '']"
-      v-html="message"
-    ></article>
+    >
+      <div v-if="cls.includes('typing')" class="typing-animation">
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+      </div>
+      <div v-else v-html="message"></div>
+    </article>
   </section>
 </template>
 
@@ -97,6 +103,15 @@ onMounted(
       align-self: flex-end;
       margin-left: 24px;
       margin-right: 0px;
+    }    
+    &.typing {
+      .message {
+        background-color: #565656;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+      }
     }
 
     &.QandA {
@@ -114,7 +129,6 @@ onMounted(
         }
       }
     }
-
   }
 
   ul {
@@ -125,6 +139,44 @@ onMounted(
     &, :visited {
       color: white;
     }
+  }
+}
+
+.typing-animation {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.typing-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  transform-origin: center;;
+  animation: typingBounce 1.4s infinite ease-in-out;
+  
+  &:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  &:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+}
+
+@keyframes typingBounce {
+  0%, 80%, 100% {
+    transform: scale(0.8) translateY(5px);
+    opacity: 0.7;
+  }
+  40% {
+    transform: scale(1.2) translateY(-5px);
+    opacity: 1;
   }
 }
 </style>
