@@ -153,7 +153,7 @@ onMounted(
   height: 8px;
   border-radius: 50%;
   background-color: white;
-  transform-origin: center;;
+  transform-origin: center;
   animation: typingBounce 1.4s infinite ease-in-out;
   
   &:nth-child(1) {

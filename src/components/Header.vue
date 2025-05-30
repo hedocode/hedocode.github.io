@@ -49,7 +49,15 @@ function changeColor(c: string) {
     <h2 v-html="subtitle"></h2>
   </header>
   <div class="locale-changer">
-    <select v-model="locale">
+    <select
+      v-model="locale"
+      :style="{
+        border: `3px solid ${color.color}`,
+        borderRadius: '10px',
+        padding: '5px',
+        backgroundColor: '#FEFEFE'
+      }"
+    >
       <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
         {{ t(lang) }}
       </option>
@@ -103,7 +111,6 @@ $gutter: 5px;
 
   select {
     cursor: pointer;
-    border: 1px solid 
   }
 }
 
