@@ -163,7 +163,7 @@ function ask(QandA: QA) {
   
     const QAIndex = QandAs.value.findIndex(match);
   
-    function appearInChatAndNewQuestions() {
+    const appearInChatAndNewQuestions = () => {
       // Appear in Chat
       chatMessages.push(
         new MessageObject(
@@ -188,7 +188,7 @@ function ask(QandA: QA) {
       canSendMessage.value = true;
     }
   
-    function sendAnimation() {
+    const sendAnimation = () => {
       // const QACopy = {...QandA};
       // QACopy.status = "disappear";
   
@@ -240,7 +240,13 @@ function ask(QandA: QA) {
 </template>
 
 <style scoped lang="scss">
-.chat {
+.chat {  
+  margin-top: 24px;
+  padding: 0px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -255,6 +261,7 @@ function ask(QandA: QA) {
 
   .message__wrapper {
     &.outsideScreen {
+      opacity: 0.3;
       + * + * {
         opacity: 0.9;
       }
@@ -262,15 +269,8 @@ function ask(QandA: QA) {
       + * {
         opacity: 0.6;
       }
-      opacity: 0.3;
     }
   }
-
-  margin-top: 24px;
-  padding: 0px 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 
   .answer {
     align-self: flex-end;

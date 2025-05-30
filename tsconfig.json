@@ -12,6 +12,7 @@
     }
   ],
   "compilerOptions": {
+    "resolveJsonModule": true,
     // alignement avec le support navigateur de Vue
     "target": "es5",
     // activation de la déduction stricte pour les propriétés de données sur `this`

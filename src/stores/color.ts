@@ -6,8 +6,7 @@ import {
   red
 } from "../data/colors.json";
 
-const useColorStore = defineStore({
-  id: 'color',
+const useColorStore = defineStore('color', {
   state: () => ({
     color: defaultColor,
   }),

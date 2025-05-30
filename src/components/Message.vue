@@ -81,6 +81,14 @@ onMounted(
 
 <style lang="scss">
 .message {
+  background-color: #404040;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 16px;
+
+  min-width: 150px;
+  max-width: 500px;
+
   &__wrapper {
     transition: all 0.4s ease-in-out;
     padding: 12px 12px 12px 0px;
@@ -108,14 +116,6 @@ onMounted(
     }
 
   }
-
-  background-color: #404040;
-  color: white;
-  border-radius: 10px;
-  padding: 10px 16px;
-
-  min-width: 150px;
-  max-width: 500px;
 
   ul {
     padding-left: 12px;

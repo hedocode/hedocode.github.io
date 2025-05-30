@@ -69,15 +69,15 @@ const messages = {
             specialty: "Quelle est ta spécialité ?",
             specialty_answer: "L'affichage, et gérer les intéractions de l'utilisateur, notamment faire en sorte que le site ressemble exactement au design voulu, et qu'il soit utilisable qu'elle que soit la taille de l'écran",
             studies: "Quelles études as-tu faites ?",
-            studies_answer: "Bac S, puis DUT Informatique et Licence Pro Web",
+            studies_answer: "J'ai fait un Bac S, puis un DUT Informatique ainsi qu'une Licence Pro Web à l'Université Clermont Auvergne, et enfin un Mastère en Architecture des Systèmes d'Information à l'Ecole Hexagone.",
             other_skills: "Tu sais faire autre chose ?",
             other_skills_answer: "Je fais également de la créations de logo, charte graphique et design d'interfaces graphiques, comme j'ai pu le faire avec Demestre Photographie",
             technical_stack: "Et niveau technique, comment réaliserai tu un site internet ?",
             technical_stack_answer: "J'utiliserai Mongo, Node&Fastify, et React/Vue, donc essentiellement HTML, (S)CSS, JS(X)",
         },
         how_can_we: {
-            contact_you: "Comment peut-on te contacter ?",
-            support_you: "Comment peut-on te soutenir ?",
+            contact_you: "Comment te contacter ?",
+            support_you: "Comment te soutenir ?",
             support_you_answer: "Abonne toi à mes réseaux sociaux et active les notifications, sinon tu peut également m'aider financierement :",
         },
         which: {
@@ -108,6 +108,7 @@ const messages = {
   
 // 2. Create i18n instance with options
 const i18n = createI18n({
+    legacy: false,
     locale: 'fr', // set locale
     fallbackLocale: 'en', // set fallback locale
     messages, // set locale messages
