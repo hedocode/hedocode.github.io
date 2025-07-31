@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import colors from "../data/colors.json";
+import colors from "../data/colors";
 import useColorStore from "../stores/color";
 
 const { t, locale } = useI18n() // use as global scope
@@ -13,7 +13,7 @@ defineProps<{
 
 
 const langs = ["en", "fr"];
-const colorKeys = Object.keys(colors);
+const colorKeys = Object.keys(colors) as Array<keyof typeof colors>;
 const colorValues = Object.values(colors);
 
 function changeColor(c: string) {
@@ -46,7 +46,6 @@ function changeColor(c: string) {
       >
       </div>
     </section>
-    <h2 v-html="subtitle"></h2>
   </header>
   <div class="locale-changer">
     <select

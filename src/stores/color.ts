@@ -1,20 +1,15 @@
 import { defineStore } from 'pinia'
-import {
-  defaultColor,
-  blue,
-  green,
-  red
-} from "../data/colors.json";
+import colors from "../data/colors";
 
 const useColorStore = defineStore('color', {
   state: () => ({
-    color: defaultColor,
+    color: colors.defaultColor,
   }),
   getters: {
-    isDefault: (state) => state.color === defaultColor,
-    isRed: (state) => state.color === red,
-    isBlue: (state) => state.color === blue,
-    isGreen: (state) => state.color === green,
+    isDefault: (state) => state.color === colors.defaultColor,
+    isRed: (state) => state.color === colors.red,
+    isBlue: (state) => state.color === colors.blue,
+    isGreen: (state) => state.color === colors.green,
   },
   actions: {
     setDefaultColor() {

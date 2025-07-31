@@ -42,7 +42,6 @@ function fadeOnScreenIntersect(
 }
 
 // # Script
-
 var numSteps = 20.0;
 
 var prevRatio = 0.0;

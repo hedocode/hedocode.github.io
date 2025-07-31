@@ -5,7 +5,6 @@ import {
   RouterView
 } from "vue-router";
 import Header from "./components/Header.vue";
-import Chat from "./components/Chat.vue";
 
 const { t } = useI18n() // use as global scope
 </script>
@@ -16,7 +15,6 @@ const { t } = useI18n() // use as global scope
     :subtitle="t('slogan_part1') + '<br/>' + t('slogan_part2')"
   />
 
-  <Chat></Chat>
   <RouterView />
 </template>
 

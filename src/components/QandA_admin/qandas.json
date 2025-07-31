@@ -1,0 +1,68 @@
+{
+  "qandas": [
+    {
+      "id": "work",
+      "question": "what_is_your.work",
+      "answer": "what_is_your.work_answer",
+      "next": {
+        "id": "specialty",
+        "question": "what_is_your.specialty",
+        "answer": "what_is_your.specialty_answer",
+        "next": [
+          {
+            "id": "language",
+            "question": "which.language_used",
+            "answer": "<a href='https://vuejs.org' target='_blank'>VueJS3</a> with <a href='https://www.typescriptlang.org/' target='__blank'>Typescript</a> and <a href='https://sass-lang.com/'>SASS</a>, language_managed with <a href='https://kazupon.github.io/vue-i18n' target='_blank'>vue-i18n</a>"
+          },
+          {
+            "id": "websites",
+            "question": "which.websites_you_worked_on",
+            "answer": "<div>ofc_list<ul><li><a href='https://www.volvic-vvx.com/' target='_blank'>Volvic VVX</a></li><li><a href='https://www.chocolats-bellanger.com/' target='_blank'>Chocolats Bellanger</a></li><li><a href='https://www.columbuscafe.com/la-carte/' target='_blank'>Columbus café</a></li><li><a href='https://myurban.fr/' target='_blank'>My Urban (Soccer)</a></li><li><a href='https://disco-star.game' target='_blank'>Disco Star</a></li></ul></div>",
+            "next": {
+              "id": "other_skills",
+              "question": "what_is_your.other_skills",
+              "answer": "<div>what_is_your.other_skills_answer__part1<br/>what_is_your.other_skills_answer__part2</div>",
+              "next": {
+                "id": "technical_stack",
+                "question": "what_is_your.technical_stack",
+                "answer": "what_is_your.technical_stack_answer"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "name",
+      "question": "what_is_your.name",
+      "answer": "Dorian Blanchard",
+      "next": [
+        {
+          "id": "studies",
+          "question": "what_is_your.studies",
+          "answer": "what_is_your.studies_answer",
+          "next": {
+            "id": "project",
+            "question": "what_is_your.project",
+            "answer": "my.project",
+            "next": {
+              "id": "support",
+              "question": "how_can_we.support_you",
+              "answer": "how_can_we.support_you_answer<ul><li><a href='https://twitter.com/edocode' target='_blank'>Twitter</a></li><li><a href='https://instagram.com/hedocode' target='_blank'>Instagram</a></li><li><a href='https://youtube.com/channel/ ' target='_blank'>YouTube</a></li><li><a href='https://paypal.me/Arilox' target='_blank'>Paypal</a></li><li>BTC : bc1q gsxs 7rwv spku 935dd l83j 97yr m8ts f33h 5d98g</li></ul>"
+            }
+          }
+        },
+        {
+          "id": "edocode",
+          "question": "why.edocode",
+          "answer": "<div>why.edocode_answer_part1<br/><br/>why.edocode_answer_part2 <a href='https://github.com/hedocode' target='_blank'>why.edocode_answer_part3</a> why.edocode_answer_part4<br/><br/>why.edocode_answer_part5 <a href='https://github.com/hedocode/MyMonoGames/releases/download/v0.0.0/win-x64.zip'>why.edocode_answer_part6</a></div>",
+          "next": {
+            "id": "contact",
+            "question": "how_can_we.contact_you",
+            "answer": "<ul><li><a href='mailto:blanchardorian@gmail.com'>by e-mail</a></li><li><a href='https://www.linkedin.com/in/dorian-blanchard-hedocode/' target='_blank'>on Linked In</a></li></ul>"
+          }
+        }
+      ]
+    }
+  ]
+}
