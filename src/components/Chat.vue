@@ -319,7 +319,7 @@ function ask(QandA: QA) {
         
         // Add the actual response
         appearInChatAndNewQuestions();
-      }, 15);
+      }, 1500);
     }
     
     sendAnimation();
