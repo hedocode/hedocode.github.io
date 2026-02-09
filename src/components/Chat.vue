@@ -67,6 +67,9 @@ const websites_as_freelance =  new QA(
         <a href="https://sacercode.fr" target="_blank">Sacercode</a>
       </li>
       <li>
+        <a href="https://www.jouvency.ch/" target="_blank">Jouvency</a>
+      </li>
+      <li>
         <a href="#">Ce site web !</a>
       </li>
     </ul>
@@ -191,6 +194,10 @@ const which_app_did_you_design = new QA(
           Ghibli App
         </a>
       </li>
+      <li>
+        <a href="https://www.figma.com/design/usRwZWb9rcIfWB9vTI4e39/Jouvency-V2" target="_blank">
+          Jouvency
+        </a>
     </ul>
   `
 )

@@ -129,6 +129,8 @@ const messages = {
         where: {
             did_you_work: "Dans quelles entreprises as-tu travaillé&nbsp;?",
             did_you_work_answer: "J'ai travaillé à Debussac Multimedia, une agence de communication digitale, et à l'Ecole Hexagone, une école d'informatique.",
+            cgi_answer_part1: "stage de fin d'études de deux ans en tant que mission pour",
+            cgi_answer_part2: " (conception d'architecture logicielle pour des hiérarchies de données complexes, en utilisant le design pattern nommé Composite)",
             soeman_description: ", un gestionnaire de relations clients français à destination des petites et moyennes entreprises.",
             debussac_description: " agence web réalisant des sites vitrine et e-commerce sur mesure.",
             ascnd_abgx_description: " un logiciel de gestion de la radioprotection pour les professionnels exposés à des sources radioactives.",
