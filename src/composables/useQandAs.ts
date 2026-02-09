@@ -1,6 +1,6 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import * as qandasData from '@/data/qandas.json'
+import * as qandasData from '@/components/QandA_admin/qandas.json'
 
 export interface QAData {
   id: string

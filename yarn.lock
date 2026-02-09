@@ -1613,6 +1613,14 @@
     "@intlify/message-compiler" "11.2.8"
     "@intlify/shared" "11.2.8"
 
+"@intlify/devtools-types@^11.2.8":
+  version "11.2.8"
+  resolved "https://registry.yarnpkg.com/@intlify/devtools-types/-/devtools-types-11.2.8.tgz#2540c5972a13c4e4536ce44e27f5caa4340de22e"
+  integrity sha512-Vf0RgvmGlCKBeZ7neHE0W94NG5Q6VA3B5ZiUS4DWZNL8Z8hFnlS43zz/9cq3lwETI+hRCCDvpMIn0GCeYViiRQ==
+  dependencies:
+    "@intlify/core-base" "11.2.8"
+    "@intlify/shared" "11.2.8"
+
 "@intlify/message-compiler@11.2.8":
   version "11.2.8"
   resolved "https://registry.yarnpkg.com/@intlify/message-compiler/-/message-compiler-11.2.8.tgz#3d967c07a36a8d6060730c1d3a2d40e3caaf07b3"
